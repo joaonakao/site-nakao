@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* typical device breakpoints
+pequenas telas: ate 600px
+celular: 600px ate 768px
+tablet:768px até 992px
+desktop: 992ps ate 1200px
+grandes telas: acima de 1200px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 600px;
+    max-width:768px;
+}
+
+#nome{
+    font-family: Gloria Hallelujah;;
+}
+
+header{
+    width: 100vw;
+}
+nav{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.direita{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+
+}
