@@ -30,8 +30,7 @@ grandes telas: acima de 1200px
 }
 
 body, html{
-    height: 490vh;
-    max-width: 768px;
+    max-width: 700px;
     font-family: "Fraunces", serif;
     color: #d85059;
 
@@ -113,14 +112,13 @@ a{
     justify-content: space-evenly;
 }
 
-
 .section_oucaem{
     background-color: #fbd68a;
 }
 
 .video{
-    width: 100vw;
-    height: 35vh;
+    
+    height: 230px;
     position: relative;
     overflow: hidden;
 }
@@ -128,7 +126,7 @@ a{
 iframe{
     position: absolute;
     overflow: hidden;
-    width: 90%;
+    width: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -136,13 +134,13 @@ iframe{
 
 h1{
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .oucaem, .redessociais{
     text-align: center;
-    padding-bottom: 5vh;
+    padding-bottom: 3rem;
 }
 
 i{
@@ -151,14 +149,15 @@ i{
 
 blockquote{
     font-size: 7vw;
-    line-height: 3rem;
+    line-height: 4rem;
     color:#c12d37;
-    padding: 8vh;
+    padding: 3rem;
 }
 .citacao{
     display: inline;
     background-color: #fcdaa8e9;
     font-style: normal;
+    white-space: nowrap;
 }
 
 .sol{
@@ -173,7 +172,6 @@ blockquote{
 .titulo_sobre{
     margin-bottom: 30px;
     padding: 0;
-
 }
 
 .texto_sobre{
