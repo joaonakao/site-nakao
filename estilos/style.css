@@ -30,7 +30,7 @@ grandes telas: acima de 1200px
 }
 
 body, html{
-    height: 500vh;
+    height: 490vh;
     max-width: 768px;
     font-family: "Fraunces", serif;
     color: #d85059;
@@ -39,18 +39,19 @@ body, html{
 
 #nome{
     font-weight: 600;
-    color: rgb(251, 214, 138);
+    color: #fbd68a;
 }
 
 header{
     width: 100vw;
-    padding: 10px 0px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
 }
-
+#nome, #musica, #sobre, #contato{
+    padding: 10px 5px;
+}
 header.rolagem #nome{
     color: #d85059;
 }
@@ -58,6 +59,14 @@ header.rolagem #nome{
 header.rolagem a{
     color: #d85059;
 }
+
+header.rolagem #musica:hover, #sobre:hover, #contato:hover{
+    background-color:#d85059;
+    color: #fbd68a;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
 
 header.rolagem{
     background-color: rgb(251, 214, 138);
@@ -75,7 +84,7 @@ nav{
 a{
     text-decoration: none;
     color: #1e0d0e;
-    color: rgb(251, 214, 138);
+    color: #fbd68a;
 }
 
 .foto1{
@@ -87,6 +96,8 @@ a{
 }
 
 .foto2{
+    background-image: url(../imagens/Nakao-251\ 2.jpg);
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,16 +110,17 @@ a{
 .direita{
     width: 70vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-.pag2{
+
+.section_oucaem{
     background-color: #fbd68a;
 }
 
 .video{
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
     position: relative;
     overflow: hidden;
 }
@@ -124,21 +136,17 @@ iframe{
 
 h1{
     text-align: center;
-    padding-top: 7vh;
-    padding-bottom: 4vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-.oucaem{
+.oucaem, .redessociais{
     text-align: center;
+    padding-bottom: 5vh;
 }
 
 i{
     margin-right: 1rem;
-}
-
-.foto2{
-    background-image: url(../imagens/Nakao-251\ 2.jpg);
-    height: 100vh;
 }
 
 blockquote{
@@ -150,11 +158,76 @@ blockquote{
 .citacao{
     display: inline;
     background-color: #fcdaa8e9;
+    font-style: normal;
 }
 
 .sol{
     color: #fd8610;
 }
+
+.section_sobre{
+    background-color: #fbd68a;
+    height: 105vh;
+    padding: 40px;
+}
+
+.titulo_sobre{
+    margin-bottom: 30px;
+    padding: 0;
+
+}
+
+.texto_sobre{
+    text-indent: 2rem;
+    line-height: 2rem;
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+.foto3{
+    background-image: url(../imagens/Nakao-361.JPEG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.titulo_contato{
+    display: inline;
+    background-color: #fcdaa8e9;
+    padding: 0;
+    line-height: 6rem;
+}
+
+.informacoes_contato{
+    line-height: 2rem;
+
+}
+
+footer{
+    text-align: center;
+    background-color: #fbd68a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .spotify {
     display: inline-block;
@@ -237,6 +310,51 @@ blockquote{
     height: 2em;
     color: #d85059;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12.012 3.992L8.008 7.996L4.004 3.992L0 7.996L4.004 12l4.004-4.004L12.012 12l-4.004 4.004l4.004 4.004l4.004-4.004L12.012 12l4.004-4.004zm4.03 4.004l3.979-3.979L24 7.996l-3.979 3.979z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  .instagram {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: #d85059;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' color='%23000'%3E%3Cpath d='M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12'/%3E%3Cpath d='M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  .facebook {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: #d85059;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+  .tiktok {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: #d85059;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
