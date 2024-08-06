@@ -80,12 +80,12 @@ nav{
     margin: auto;
 }
 
-a{
+.direita > a{
     text-decoration: none;
     color: #fbd68a;
 }
 
-.citacao > a{
+a{
     color: #d85059;
 }
 
