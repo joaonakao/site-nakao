@@ -82,8 +82,11 @@ nav{
 
 a{
     text-decoration: none;
-    color: #1e0d0e;
     color: #fbd68a;
+}
+
+.citacao > a{
+    color: #d85059;
 }
 
 .foto1{
@@ -153,11 +156,13 @@ blockquote{
     color:#c12d37;
     padding: 3rem;
 }
+
 .citacao{
     display: inline;
     background-color: #fcdaa8e9;
     font-style: normal;
     white-space: nowrap;
+    color: #d85059;
 }
 
 .sol{
@@ -200,7 +205,6 @@ blockquote{
 
 .informacoes_contato{
     line-height: 2rem;
-
 }
 
 footer{
