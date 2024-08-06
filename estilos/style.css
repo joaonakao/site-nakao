@@ -10,6 +10,19 @@ grandes telas: acima de 1200px
 
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gloria+Hallelujah&display=swap');
+
+
+.fraunces-<uniquifier> {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -17,16 +30,23 @@ grandes telas: acima de 1200px
 }
 
 body, html{
-
+    height: 500vh;
+    max-width: 768px;
+    font-family: "Fraunces", serif;
+    color: #1e0d0e;
 }
 
 #nome{
-    font-family: Gloria Hallelujah;;
+    font-weight: 600;
+
 }
 
 header{
-    width: 100%;
+    width: 100vw;
     padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav{
@@ -35,18 +55,22 @@ nav{
     justify-content: space-between;
     margin: auto;
 }
-.container_foto{
-    width: 100vw;
-    height: 100vh;
 
+a{
+    text-decoration: none;
+    color: #1e0d0e;
 }
+
 .foto{
+    background-image: url(../imagens/Nakao-97\ 2.JPEG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 40vh;
-    background-image: url(../imagens/Nakao-97\ 2.JPEG);
-    background-color: black;
+    height: 100vh;
+}
+
+.esquerda{
+    margin-left: 15px ;
 }
 
 .direita{
