@@ -108,7 +108,7 @@ a{
 
 .video{
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     position: relative;
     overflow: hidden;
 }
@@ -142,15 +142,18 @@ i{
 }
 
 blockquote{
-    font-size: 2em;
-    line-height: 4rem;
-    padding: 5vh;
-    color:#f94854;
-    display: inline-block;
+    font-size: 7vw;
+    line-height: 3rem;
+    color:#c12d37;
+    padding: 8vh;
+}
+.citacao{
+    display: inline;
+    background-color: #fcdaa8e9;
 }
 
 .sol{
-    color: #fbd68a;
+    color: #fd8610;
 }
 
 .spotify {
