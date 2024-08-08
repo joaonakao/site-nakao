@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width:600px){
+@media screen and (min-width:400px){
     .foto1{
         background-image: url(../imagens/foto1-vertical.JPEG);
     }  
@@ -16,7 +16,7 @@
     }
 }
 
-@media screen and (min-width:930px){
+@media screen and (min-width:700px){
 
     .foto2{
         display: flex;
@@ -25,7 +25,7 @@
 
     blockquote{
         font-size: 1.5em;
-        padding: 1rem 3rem;
+        padding: 8rem 3rem;
     }
 
     .citacao{
@@ -34,7 +34,7 @@
 
     .section_sobre{
         background-color: #fbd68a;
-        padding: 80px 300px;
+        padding: 80px 100px;
     }
 
     .titulo_contato{
@@ -43,10 +43,13 @@
         line-height: 9rem;
     }
 
+    .foto3{
+        background-image: url(../imagens/paginainicial.JPEG);
+
 }
 
-@media screen and (min-width:650px) and (max-height:820px){
-    
+@media screen and (min-width:1100px){
+
     .foto1{
         background-image: url(../imagens/foto1_vertical2.JPEG);  
     }
@@ -74,31 +77,4 @@
     }
 }
 
-@media screen and (min-width:1200px) and (min-height: 900px){
-
-    .foto1{
-        background-image: url(../imagens/foto1_vertical2.JPEG);  
-    }
-
-    .foto2{
-        background-image: url(../imagens/foto2_vertical2.JPEG);
-        display: flex;
-        justify-content: center;
-    }
-
-    .foto3{
-        background-image: url(../imagens/paginainicial.JPEG);
-
-    blockquote{
-        height: 20vh;
-    }
-
-    .citacao{
-        font-size: 0.6em; 
-        padding: 0px 1rem;
-    }
-
-    .texto_sobre{
-        text-align: justify;
-    }
 }
