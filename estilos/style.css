@@ -30,10 +30,8 @@ grandes telas: acima de 1200px
 }
 
 body, html{
-    max-width: 700px;
     font-family: "Fraunces", serif;
     color: #d85059;
-
 }
 
 #nome{
@@ -69,7 +67,7 @@ header.rolagem #musica:hover, #sobre:hover, #contato:hover{
 
 header.rolagem{
     background-color: rgb(251, 214, 138);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav{
@@ -120,8 +118,7 @@ a{
 }
 
 .video{
-    
-    height: 230px;
+    height: 40vh;
     position: relative;
     overflow: hidden;
 }
@@ -129,7 +126,8 @@ a{
 iframe{
     position: absolute;
     overflow: hidden;
-    width: 95%;
+    height: 100%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -172,11 +170,18 @@ blockquote{
 .section_sobre{
     background-color: #fbd68a;
     padding: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .titulo_sobre{
     margin-bottom: 30px;
     padding: 0;
+}
+
+.container_texto_sobre{
+    flex: auto;
 }
 
 .texto_sobre{
@@ -207,28 +212,15 @@ blockquote{
     line-height: 2rem;
 }
 
+.contato{
+    background-color: #fbd68a;
+    display: inline;
+}
+
 footer{
     text-align: center;
     background-color: #fbd68a;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .spotify {
     display: inline-block;

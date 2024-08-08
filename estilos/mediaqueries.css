@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@media screen and (min-width:600px){
+    .foto1{
+        background-image: url(../imagens/foto1-vertical.JPEG);
+    }  
+
+    .foto2{
+        background-image: url(../imagens/foto2-vertical.jpg);
+    }
+
+    blockquote{
+        font-size: 3em;
+        line-height: 5rem;
+        padding: 1.5rem 3rem;
+    }
+}
+
+@media screen and (min-width:930px) {
+
+
+    blockquote{
+        font-size: 4em;
+        line-height: 6rem;
+        padding: 1.5rem 3rem;
+    }
+
+    .section_sobre{
+        background-color: #fbd68a;
+        padding: 80px 300px;
+    }
+
+    .titulo_contato{
+        display: inline;
+        background-color: #fcdaa8e9;
+        line-height: 9rem;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    .foto1{
+        background-image: url(../imagens/foto1_vertical2.JPEG);  
+    }
+
+    .foto2{
+        background-image: url(../imagens/foto2_vertical2.JPEG);
+    }
+
+    .foto3{
+        background-image: url(../imagens/página\ inicial.jpg);
+    }
+
+    blockquote{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .citacao{
+        font-size: 0.6em; 
+        padding: 0px 1rem;
+        display: block;
+    }
+
+    .texto_sobre{
+        text-align: justify;
+    }
+
+
+
+}
