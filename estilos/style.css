@@ -45,6 +45,11 @@ header{
     top: 0;
     left: 0;
     z-index: 1;
+    visibility: hidden;
+}
+
+#nome{
+    visibility: visible;
 }
 #nome, #musica, #sobre, #contato{
     padding: 10px 5px;
@@ -68,6 +73,7 @@ header.rolagem #musica:hover, #sobre:hover, #contato:hover{
 header.rolagem{
     background-color: rgb(251, 214, 138);
     transition: 0.5s;
+    visibility: visible;
 }
 
 nav{
@@ -79,11 +85,11 @@ nav{
 }
 
 .direita > a{
-    text-decoration: none;
     color: #fbd68a;
 }
 
 a{
+    text-decoration: none;
     color: #d85059;
 }
 
@@ -105,6 +111,8 @@ a{
 
 .esquerda{
     margin-left: 15px ;
+    width: 70vw;
+    display: flex;
 }
 
 .direita{
